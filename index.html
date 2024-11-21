@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="p.php" method="post">
+    <label for=""> Nom :</label>
+    <input type="text" name="nom">
+
+    <label for=""> Prenom :</label>
+    <input type="text" name="prenom">
+
+    <label for="">Age :</label>
+    <input type="number" name="age"><br><br>
+
+    <label for="langue">Langues pratiquees</label><br>
+
+    <select name="langue[]" multiple>
+    <option value="francais">francais</option>
+    <option value="anglais">anglais</option>
+    <option value="allemand">allemand</option>
+    <option value="espagnol">espagnol</option>
+    </select><br><br>
+
+    <label for="">Competences informatique</label><br>
+
+    Java<input type="checkbox" name="competances[]" value="java">
+    XHTML<input type="checkbox" name="competances[]" value="XHTML">
+    PHP<input type="checkbox" name="competances[]" value="PHP">
+    SQL<input type="checkbox" name="competances[]" value="SQL"><br><br>
+
+    <input type="reset" value="Effacer">
+    <input type="submit" value="Envoyer">
+</form>
+</body>
+</html>
